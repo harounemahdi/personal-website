@@ -43,12 +43,33 @@ nav ul {
   font-size: var(--fontsize-nav);
   text-align: center;
   list-style-type: none;
-  text-decoration: none;
+  text-decoration: none !important;
   color: white !important;
 }
 
 nav ul li {
   margin: 40px;
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.navitem:link {
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none !important;
+  color: white !important;
+}
+
+.navitem:visited {
+  font-size: var(--fontsize-nav);
+  text-align: center;
+  list-style-type: none;
+  text-decoration: none !important;
+  color: white !important;
 }
 
 .active {

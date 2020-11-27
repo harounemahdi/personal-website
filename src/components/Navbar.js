@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { NavItem } from "./NavItem";
+import NavItem from "./NavItem";
 
 class NavBar extends Component {
   constructor(props) {
@@ -17,8 +17,8 @@ class NavBar extends Component {
         .classList.remove("active");
     }
 
-    this.setState({ NavItemId: x }, () => {
-      document.getElementById(this.state.NavItemActive.classList.add("active"));
+    this.setState({ NavItemActive: x }, () => {
+      document.getElementById(this.state.NavItemActive).classList.add("active");
     });
   };
 
@@ -26,26 +26,26 @@ class NavBar extends Component {
     return (
       <nav>
         <ul>
-          <NavItem item="Home" tolink="/" activec={this.activeitem}></NavItem>
+          <NavItem item="Home" tolink="/" activec={this.activeItem}></NavItem>
           <NavItem
             item="About"
             tolink="/about"
-            activec={this.activeitem}
+            activec={this.activeItem}
           ></NavItem>
           <NavItem
             item="Education"
             tolink="/education"
-            activec={this.activeitem}
+            activec={this.activeItem}
           ></NavItem>
           <NavItem
             item="Skills"
             tolink="/skills"
-            activec={this.activeitem}
+            activec={this.activeItem}
           ></NavItem>
           <NavItem
             item="Contact"
             tolink="/contact"
-            activec={this.activeitem}
+            activec={this.activeItem}
           ></NavItem>
         </ul>
       </nav>

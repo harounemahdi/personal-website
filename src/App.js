@@ -1,9 +1,16 @@
 //import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 import { React } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
+    <Router>
+      <div className="App">
+        <NavBar />
+      </div>
+    </Router>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

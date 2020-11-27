@@ -4,10 +4,11 @@ import React, { Component } from "react";
 class NavItem extends Component {
   render() {
     return (
-      <li>
+      <li id={this.props.item}>
         <Link
-          to={this.props.toLink}
+          to={this.props.tolink}
           onClick={this.props.activec.bind(this, this.props.item)}
+          class="navitem"
         >
           {this.props.item}
         </Link>
