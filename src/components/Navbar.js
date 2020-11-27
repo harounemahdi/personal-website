@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavItem from "./NavItem";
+import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 class NavBar extends Component {
   constructor(props) {
@@ -26,7 +27,12 @@ class NavBar extends Component {
     return (
       <nav>
         <ul>
-          <NavItem item="Home" tolink="/" activec={this.activeItem}></NavItem>
+          <NavItem
+            icon={faHome}
+            item="Home"
+            tolink="/"
+            activec={this.activeItem}
+          ></NavItem>
           <NavItem
             item="About"
             tolink="/about"
