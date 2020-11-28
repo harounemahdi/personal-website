@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import NavItem from "./NavItem";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHome,
+  faAddressCard,
+  faGraduationCap,
+  faToolbox,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 class NavBar extends Component {
   constructor(props) {
@@ -34,21 +40,25 @@ class NavBar extends Component {
             activec={this.activeItem}
           ></NavItem>
           <NavItem
+            icon={faAddressCard}
             item="About"
             tolink="/about"
             activec={this.activeItem}
           ></NavItem>
           <NavItem
+            icon={faGraduationCap}
             item="Education"
             tolink="/education"
             activec={this.activeItem}
           ></NavItem>
           <NavItem
+            icon={faToolbox}
             item="Skills"
             tolink="/skills"
             activec={this.activeItem}
           ></NavItem>
           <NavItem
+            icon={faEnvelope}
             item="Contact"
             tolink="/contact"
             activec={this.activeItem}
