@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  padding: 60px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   flex: var(--sidebar-flex);
   background: rgb(87, 75, 255) 80%;
   /* background: linear-gradient(
@@ -82,14 +82,13 @@ nav ul {
 .nav-bg {
   height: 100%;
   width: 100%;
-  margin: ;
 }
 
 .social {
-  position: absolute;
+  position: relative;
   margin-top: 20px;
   display: flex;
-  bottom: 150px;
+  bottom: 50px;
 }
 
 .icon {
@@ -107,7 +106,7 @@ nav ul {
   /* color: white !important; */
   height: 140px;
   width: 140px;
-  padding: 15px 0px;
+  padding: 23.75px 0px;
 }
 
 .home {
@@ -124,11 +123,17 @@ nav ul {
 .typingeffect {
   font-size: var(--typing-font);
   margin-bottom: 30px;
+  margin-top: 15px;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.pic-bg {
+  background: rgb(87, 75, 255) 80%;
+  border-radius: 20%;
 }
 @media all and (max-width: 450px) {
   :root {
@@ -168,4 +173,20 @@ a {
   .social i {
     padding-right: 0px;
   }
+}
+
+.subtopic {
+  margin: 10px 10px 30px 10px !important;
+}
+
+p {
+  font-size: var(--fontsize-p);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 10px;
 }
