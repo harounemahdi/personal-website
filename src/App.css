@@ -31,7 +31,7 @@ body {
 nav {
   padding: 0px 0px 0px 0px;
   flex: var(--sidebar-flex);
-  background: rgb(87, 75, 255) 80%;
+  background: rgb(56, 48, 167) 80%;
   /* background: linear-gradient(
     180deg,
     rgb(67, 34, 214) 50%,
@@ -84,6 +84,10 @@ nav ul {
   width: 100%;
 }
 
+.nav-bg:hover {
+  background-color: rgb(128, 130, 255);
+}
+
 .social {
   position: relative;
   margin-top: 20px;
@@ -116,9 +120,10 @@ nav ul {
   align-items: center;
 }
 .profilepic {
-  border-radius: 20%;
+  border-radius: 15%;
   width: 200px;
   margin: 30px;
+  border: 1px solid black;
 }
 .typingeffect {
   font-size: var(--typing-font);
@@ -131,10 +136,10 @@ a {
   color: white;
 }
 
-.pic-bg {
+/* .pic-bg {
   background: rgb(87, 75, 255) 80%;
   border-radius: 20%;
-}
+} */
 @media all and (max-width: 450px) {
   :root {
     --fontsize-nav: 1rem;
@@ -189,4 +194,37 @@ h3,
 h4,
 p {
   margin: 10px;
+}
+
+.widecard {
+  border: 0px solid #9a9b9c;
+  display: flex;
+  margin: 30px 0px 30px 0px;
+}
+.widecard:hover {
+  color: #1b1d20;
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
+  height: 100px;
+}
+
+.item + .item {
+  margin-left: 2%;
+}
+
+.skills ul li {
+  list-style-type: none;
+  margin: 20px;
+}
+
+.contact-social {
+  margin-top: 60px;
 }
